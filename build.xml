@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="CleverReach_Connect" default="deploy.local" basedir=".">
+
+	<property file="build.properties" />
+	<property file="build.default.properties" />
+
+	<property name="builddir" value="${basedir}/build" />
+	<property name="targetdir" value="${dev.local.deployDir}" />
+	<property name="srcdir" value="${basedir}/src" />
+
+	<target name="deploy.local">
+		<copy todir="${targetdir}" overwrite="yes" verbose="yes">
+			<fileset dir="${srcdir}">
+				<modified />
+				<include name="**/*" />
+				<exclude name="**/.svn/**" />
+				<exclude name="var/log/**" />
+			</fileset>
+		</copy>
+	</target>
+</project>
