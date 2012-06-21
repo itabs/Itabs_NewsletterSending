@@ -5,4 +5,29 @@
 			<version>0.1.0</version>
 		</Itabs_NewsletterSending>
 	</modules>
+	<global>
+		<helpers>
+			<itabs_newslettersending>
+				<class>Itabs_NewsletterSending_Helper</class>
+			</itabs_newslettersending>
+		</helpers>
+		<models>
+			<itabs_newslettersending>
+				<class>Itabs_NewsletterSending_Model</class>
+			</itabs_newslettersending>
+			<newsletter>
+				<rewrite>
+					<observer>Itabs_NewsletterSending_Model_Observer</observer>
+				</rewrite>
+			</newsletter>
+		</models>
+	</global>
+    <default>
+        <newsletter>
+            <sending>
+                <count_of_queue>3</count_of_queue>
+                <count_of_subscriptions>20</count_of_subscriptions>
+            </sending>
+        </newsletter>
+    </default>
 </config>
