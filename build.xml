@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="CleverReach_Connect" default="deploy.local" basedir=".">
+<project name="Itabs_NewsletterSending" default="deploy.local" basedir=".">
 
 	<property file="build.properties" />
 	<property file="build.default.properties" />
