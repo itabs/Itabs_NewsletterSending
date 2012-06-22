@@ -33,7 +33,14 @@
  */
 class Itabs_NewsletterSending_Model_Observer extends Mage_Newsletter_Model_Observer
 {
+    /**
+     * @var string
+     */
     const XML_PATH_NEWSLETTER_SENDING_COUNT_QUEUE = 'newsletter/sending/count_of_queue';
+
+    /**
+     * @var string
+     */
     const XML_PATH_NEWSLETTER_SENDING_COUNT_SUBSCRIBER = 'newsletter/sending/count_of_subscriptions';
 
     /**
@@ -44,8 +51,8 @@ class Itabs_NewsletterSending_Model_Observer extends Mage_Newsletter_Model_Obser
      */
     public function scheduledSend($schedule)
     {
-        $countOfQueue = Mage::getStoreConfig(self::XML_PATH_NEWSLETTER_SENDING_COUNT_QUEUE);
-        $countOfSubscriptions = Mage::getStoreConfig(self::XML_PATH_NEWSLETTER_SENDING_COUNT_SUBSCRIBER);
+        $countOfQueue = (int) Mage::getStoreConfig(self::XML_PATH_NEWSLETTER_SENDING_COUNT_QUEUE);
+        $countOfSubscriptions = (int) Mage::getStoreConfig(self::XML_PATH_NEWSLETTER_SENDING_COUNT_SUBSCRIBER);
 
         $collection = Mage::getModel('newsletter/queue')->getCollection()
             ->setPageSize($countOfQueue)
