@@ -1,9 +1,5 @@
-cache.properties
-dev.cache.properties
-live.cache.properties
-devonline.cache.properties
+build.sh
 .DS_Store
-.DS_STORE
 *.cache.properties
 *~
 *.swp
@@ -14,3 +10,7 @@ build.properties
 .settings/**/*
 .externalToolBuilders
 .externalToolBuilders/**/*
+.vagrant
+.vagrant/**/*
+Vagrantfile
+/.idea
