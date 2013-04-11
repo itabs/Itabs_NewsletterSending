@@ -4,7 +4,7 @@ Adds the ability to define the count of subscriptions for newsletter sending pro
 
 Facts
 -----
-- version: X.X.X
+- version: 1.0.0
 - [extension on GitHub](https://github.com/itabs/Itabs_NewsletterSending)
 
 Description
