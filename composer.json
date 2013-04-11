@@ -1,0 +1,16 @@
+{
+    "name": "itabs/newslettersending",
+    "license": "OSL-3.0",
+    "type": "magento-module",
+    "description": "Adds the ability to define the count of subscriptions for newsletter sending process in the system configuration.",
+    "homepage": "https://github.com/itabs/Itabs_NewsletterSending",
+    "authors": [
+        {
+            "name": "Rouven Alexander Rieker",
+            "email": "therouv@googlemail.com"
+        }
+    ],
+    "require":{
+        "magento-hackathon/magento-composer-installer":"*"
+    }
+}
