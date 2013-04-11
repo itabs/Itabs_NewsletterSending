@@ -35,6 +35,17 @@
             </newsletter>
         </models>
     </global>
+    <adminhtml>
+        <translate>
+            <modules>
+                <Itabs_NewsletterSending>
+                    <files>
+                        <default>Itabs_NewsletterSending.csv</default>
+                    </files>
+                </Itabs_NewsletterSending>
+            </modules>
+        </translate>
+    </adminhtml>
     <default>
         <newsletter>
             <sending>

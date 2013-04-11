@@ -14,7 +14,7 @@
  -->
 <config>
     <sections>
-        <newsletter translate="label" module="newsletter">
+        <newsletter translate="label" module="itabs_newslettersending">
             <groups>
                 <sending translate="label">
                     <label>Sending Options</label>
@@ -25,7 +25,7 @@
                     <show_in_store>0</show_in_store>
                     <fields>
                         <count_of_queue translate="label">
-                            <label>Count of Queue per Sending Process</label>
+                            <label>Queue per Sending Process</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>1</sort_order>
                             <show_in_default>1</show_in_default>
@@ -33,7 +33,7 @@
                             <show_in_store>0</show_in_store>
                         </count_of_queue>
                         <count_of_subscriptions translate="label">
-                            <label>Count of Queue per Sending Process</label>
+                            <label>Subscriptions per Sending Process</label>
                             <frontend_type>text</frontend_type>
                             <sort_order>2</sort_order>
                             <show_in_default>1</show_in_default>
