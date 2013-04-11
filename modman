@@ -1,0 +1,4 @@
+src/app/code/local/Itabs/NewsletterSending/         app/code/local/Itabs/NewsletterSending/
+src/app/etc/modules/Itabs_NewsletterSending.xml     app/etc/modules/Itabs_NewsletterSending.xml
+src/app/locale/de_DE/Itabs_NewsletterSending.csv    app/locale/de_DE/Itabs_NewsletterSending.csv
+src/app/locale/en_US/Itabs_NewsletterSending.csv    app/locale/en_US/Itabs_NewsletterSending.csv
